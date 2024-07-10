@@ -1,0 +1,42 @@
+.pg{
+    margin: 10px;
+    padding:5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #20948B;
+    border-radius: 20px;
+    color:black;
+}
+.pg1{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+ul{
+    list-style: none;
+}
+
+
+.Dark .pg{
+    background:black;
+    color: white;
+}
+.Dark a{
+    color:white;
+}
+
+.on{
+    display: flex;
+    background-color: blue;
+}
+.box{
+    height:5px;
+    width:5px;
+    background-color: white;
+}

@@ -1,0 +1,200 @@
+npx create react app  -> web pack bundler
+vite -> bundler 
+
+
+
+
+
+1)  npm create vite my-app -- --template react
+
+
+dependencies ->normal basic dependency to develop project 
+
+dev dependencies   ->dependency helpful for development of project in system 
+
+index.html -> main.jsx -> app.jsx
+
+2- components:
+1. class component
+2. function component
+
+
+4-types of function declaration:
+
+should return HTML code in function component.
+
+function App(){
+	return(
+<div>App component </div>)
+}
+
+
+2 => Arrow function
+
+const App =() =>{
+	return(
+	      <div>App component </div>
+)
+}
+
+
+--------------------------------
+
+<></>  -  Fragmenting
+
+--------------------------------
+
+<div></div> if div is used to enclose element it will take a space in DOM tree to reduce space in DOM tree
+
+--------------------------------
+function App() {
+  const Name="Sudhar"
+  const Age=21
+  return (
+    <div className='text-danger'>
+      App Component<br/>
+      Name: {Name}<br/>
+      Age: {Age}
+      <Body/>
+    </div>
+  )
+}
+
+{} is usede for java script operation using variable.
+
+--------------------------------------
+
+other way to invoke component is function call  -> Body()
+
+--------------------------------------
+
+
+props used to pass the arguments
+
+
+passing argument using function:
+{Body({Name,Age})}  
+
+passing argument using Element:
+<Body name={Name} age={Age}/>  
+
+
+props argument only pass from parent to child
+
+no child to parent is possible
+
+----------------------------------------
+
+In react what ever start with use called as hooks
+
+Hooks are helper function in react package
+
+useState used to change variable value in DOM it is important in updating a variable
+
+useState has variable and setter function
+
+const [count,setCount]=useState(0);
+    function handleCount(){
+        setCount(count+1);
+    }
+
+useState return array
+
+const[variable,setterFunction]=useState();
+
+
+* State use rendering cycle it changes values only after a cycle
+
+setCount((prev)=>prev+1)
+setCount((prev)=>prev+2)
+it is used to over come rendering cycle cause State component always update after a cycle
+---------------------------------
+react advantages :
+
+->virtual DOM
+->Reusable components
+->JSX format support ,
+
+
+*=========================================*
+
+~~~~~~
+DAY-2:
+~~~~~~
+
+in destructuring:
+
+if object the key is important
+
+const obj={
+name="sri",
+age:30
+}
+
+const{name,age}=obj
+
+if array the object index position is important
+
+const arr=[1,2,3,4,5]
+const [a,b,,,c]=arr
+
+const a={
+    name:"ha",
+    age:30,
+    gender:"Male",
+    family:3
+}
+const {name,age,...r}=a
+
+...  -> rest operator
+
+: used for renaming 
+const {name:n,age,...r}=a name will not work only n will work as variable
+
+const a={
+    name:"ha",
+    age:30,
+    gender:"Male",
+    family:3
+}
+
+const {name:n,age,grade,...r}=a
+for this output of garde will be undefined and if we want to assign value to grade that is not defined in object use =
+eg
+  grade='A'  .
+
+
+useEffectr take two argument function and array
+useEffect(()=>{},{})
+
+context API is used to avoid prop drilling
+
+
+============================================================
+
+
+~~~~~~~~~
+Day-3
+~~~~~~~~~
+
+const sum=()=>{}  ->arrow function 
+to convert normal function to arrow function use place parameter between =>
+
+to sort numbers using sort map2.sort((a,b)=>{
+return a-b;
+})
+
+map():
+
+map input and output element length will be same
+to convert one element from another
+
+filter():
+to filter the values of array object
+
+
+... spread operator
+
+const 
+
+const[data,setData]=useState(studentDetails)
