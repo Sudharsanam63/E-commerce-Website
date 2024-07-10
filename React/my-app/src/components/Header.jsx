@@ -48,7 +48,7 @@ function Header(props){
                 <nav>
                     <ul className="pg1">
                         
-                        <li><Link to="/product">Product</Link></li>
+                        <li><Link to="/">Product</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li>cart</li>
                         <li><Link to="/cart">Cart:{cartItems.length}</Link></li>

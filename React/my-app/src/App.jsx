@@ -35,6 +35,7 @@ function App() {
      
       <ThemeContext.Provider value={{ theme: theme, toggleTheme: toggleTheme }}>
         <Header />
+        
         <Outlet/> 
       </ThemeContext.Provider>
       
